@@ -1,7 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+// Okta
+import { OktaCallbackComponent } from '@okta/okta-angular';
+
+
+const routes: Routes = [
+  // Okta
+  {
+    path: 'implicit/callback',
+    component: OktaCallbackComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
